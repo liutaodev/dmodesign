@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LaudView">
+        <attr name="lv_strokewidth" format="dimension"/>
+        <attr name="lv_count" format="integer"/>
+    </declare-styleable>
+</resources>
