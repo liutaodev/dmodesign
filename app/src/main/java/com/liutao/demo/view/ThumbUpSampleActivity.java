@@ -7,30 +7,21 @@ import android.util.Log;
 
 import com.liutao.demo.R;
 import com.liutao.demo.widget.thumb.ThumbUpView;
-import com.liutao.demo.widget.thumb.ThumbView;
+import com.liutao.laud.widget.LaudDemo;
 import com.liutao.laud.widget.LaudView;
+import com.liutao.laud.widget.ThumbView;
 
 public class ThumbUpSampleActivity extends AppCompatActivity {
 
     ThumbUpView newThumbUpView;
-    LaudView laud_view;
+    LaudDemo laud_view;
+    LaudView lv_test01;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_thumb_up_sample);
         newThumbUpView = findViewById(R.id.newThumbUpView);
-        newThumbUpView.setThumbUpClickListener(new ThumbView.ThumbUpClickListener() {
-            @Override
-            public void thumbUpFinish() {
-                Log.d("MainActivity","New点赞成功");
-            }
-
-            @Override
-            public void thumbDownFinish() {
-                Log.d("MainActivity","New取消点赞成功");
-            }
-        });
-        laud_view = findViewById(R.id.laud_view);
+        lv_test01 = findViewById(R.id.lv_test01);
     }
 }

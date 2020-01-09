@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <declare-styleable name="LaudDemo">
+        <attr name="ld_strokewidth" format="dimension"/>
+        <attr name="ld_count" format="integer"/>
+    </declare-styleable>
+
     <declare-styleable name="LaudView">
-        <attr name="lv_strokewidth" format="dimension"/>
-        <attr name="lv_count" format="integer"/>
+        <attr name="lv_text_size" format="dimension"/>
+        <attr name="lv_drawable_padding" format="dimension"/>
+        <attr name="lv_laud_count" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CountView">
+        <attr name="cv_count" format="integer"/>
+        <attr name="cv_text_size" format="dimension"/>
+        <attr name="cv_text_color" format="color"/>
     </declare-styleable>
 </resources>

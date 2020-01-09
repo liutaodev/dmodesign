@@ -8,7 +8,7 @@
 
 
     <com.liutao.demo.widget.thumb.ThumbUpView
-        android:visibility="gone"
+        android:visibility="visible"
         android:layout_centerInParent="true"
         android:id="@+id/newThumbUpView"
         android:layout_width="wrap_content"
@@ -16,13 +16,13 @@
         android:layout_gravity="center_horizontal"
         android:padding="10dp"
         app:tuv_count="109"/>
+
     <com.liutao.laud.widget.LaudView
-        android:id="@+id/laud_view"
-        android:background="@color/antiquewhite"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerInParent="true"
-        app:lv_strokewidth="5dp"
-        app:lv_count="99"/>
+        android:id="@+id/lv_test01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/newThumbUpView"
+        app:lv_laud_count="99"/>
 
 </RelativeLayout>
